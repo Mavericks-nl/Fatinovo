@@ -1,0 +1,210 @@
+nav {
+  color: var(--bs-black);
+  background: white;
+  box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
+}
+
+nav .topper {
+  color: #016f32;
+  font-family: Rubik, sherif;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+nav .nav-link {
+  font-family: Rubik, sherif;
+  font-weight: 700;
+  color: var(--bs-black);
+}
+
+.main {
+  margin-top: 3em;
+  color: #134b5f;
+}
+
+.main .text-one {
+  color: #134b5f;
+  font-family: Rubik, sherif;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.main .text-two {
+  color: #134b5f;
+  font-family: Rubik, sherif;
+  font-weight: 700;
+  font-size: 4em;
+}
+
+.main .text-three {
+  color: #134b5f;
+  font-family: Rubik, sherif;
+  font-weight: 450;
+  font-size: 2em;
+}
+
+.main .btn {
+  background-color: white;
+  color: #134b5f;
+  border: 2px solid #134b5f;
+}
+
+.main .btn:hover, .main .btn:focus, .main .btn:active, .main .btn.active, .main .open > .dropdown-toggle.btn {
+  background-color: #134b5f;
+  color: white;
+}
+
+.main span {
+  font-weight: 500;
+  font-family: Rubik, sherif;
+  font-size: 1em;
+}
+
+.main .git-el, .main .twitter-el {
+  padding: 10px;
+}
+
+.main .image1 {
+  max-width: 100%;
+  height: auto;
+}
+
+#section1 img {
+  max-width: 80%;
+  height: auto;
+}
+
+#section1 h3 {
+  font-size: 2em;
+  font-family: Rubik, sherif;
+  font-weight: 800;
+  color: #134b5f;
+}
+
+#section1 p {
+  font-family: Rubik, sherif;
+  color: #134b5f;
+}
+
+#section1 span {
+  font-family: Rubik, sherif;
+  font-weight: 700;
+}
+
+#section2 {
+  margin-top: 8em;
+  margin-bottom: 8em;
+}
+
+#section2 h3 {
+  font-family: Rubik, sherif;
+  color: #134b5f;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+#section2 .row {
+  margin-top: 1em;
+}
+
+#section2 .card {
+  margin: 1em auto;
+  background: -webkit-gradient(linear, left top, right top, from(#e3ffe7), to(#d9e7ff)) box-shadow rgba(var(--bs-black), 0.075);
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%) box-shadow rgba(var(--bs-black), 0.075);
+}
+
+#section2 a {
+  text-decoration: none;
+  font-family: Rubik, sherif;
+  font-weight: 800;
+}
+
+#section2 p {
+  color: #134b5f;
+  font-family: Rubik, sherif;
+  font-weight: 500;
+}
+
+#section3 .toper {
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 7em;
+  height: 400px;
+  background-color: #134b5f;
+}
+
+#section3 h3 {
+  padding-top: 4em;
+  font-family: Rubik, sherif;
+  color: white;
+  font-weight: 700;
+}
+
+#section3 p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: Rubik, sherif;
+  color: white;
+  font-size: 1.2em;
+}
+
+#section3 input {
+  border: 1px solid black;
+  padding-right: 3em;
+  margin-right: 2em;
+}
+
+#section3 span {
+  font-family: Rubik, sherif;
+  font-weight: 300;
+  color: #d9e7ff;
+}
+
+#contact {
+  padding-left: 15em;
+}
+
+#contactForm {
+  text-align: center;
+}
+
+#contactForm p {
+  text-align: center;
+  font-family: Rubik, sherif;
+  color: #134b5f;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#contactForm ::-webkit-input-placeholder {
+  font-family: Rubik, sherif;
+  color: #134b5f;
+}
+
+#contactForm :-ms-input-placeholder {
+  font-family: Rubik, sherif;
+  color: #134b5f;
+}
+
+#contactForm ::-ms-input-placeholder {
+  font-family: Rubik, sherif;
+  color: #134b5f;
+}
+
+#contactForm ::placeholder {
+  font-family: Rubik, sherif;
+  color: #134b5f;
+}
+
+#contactForm textarea {
+  height: 10rem;
+}
+
+#contactForm span {
+  font-family: Rubik, sherif;
+  color: #134b5f;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,264 @@
+
+$color1: var(--bs-black);
+$color2: white;
+$color3: #134b5f;
+$fontW: 700;
+$box-shadow-sm: 0 .125rem .25rem rgba($color1, .075);
+$font:  Rubik,sherif;
+$btn-hover-bg-tint-amount: 15%;
+
+
+nav {
+    color: $color1;
+    background: white;
+    box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
+
+
+    .topper {
+        color: #016f32;
+        font-family: $font;
+        font-size: 2em;
+        font-weight: $fontW;
+        letter-spacing: -2px;
+    }
+
+    .nav-link {
+        font-family: $font;
+        font-weight: $fontW;
+        color: $color1;
+       
+	  
+}
+
+}
+
+.main {
+    margin-top:  3em;
+    color: $color3;
+
+    .text-one {
+        color: $color3;
+        font-family: $font;
+        font-weight: 800;
+        font-size: 2em;
+        
+    }
+
+    .text-two {
+         color: $color3;
+        font-family: $font;
+        font-weight: $fontW;
+        font-size: 4em;
+        
+    }
+
+    .text-three {
+        color: $color3;
+        font-family: $font;
+        font-weight: 450;
+        font-size: 2em;
+        
+    }
+
+    .btn {
+        background-color: $color2;
+        color: #134b5f;
+        border: 2px solid $color3;
+    }
+
+    .btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn {
+        background-color: $color3;
+        color: $color2;
+    }
+
+
+
+    
+
+  
+
+    span {
+        font-weight: 500;
+        
+        font-family: $font;
+        font-size: 1em;
+    }
+
+   
+
+    .git-el, .twitter-el {
+        padding: 10px;
+    }
+
+    
+
+    .image1 {
+        max-width: 100%;
+        height: auto;
+    }
+
+  
+}
+
+
+#section1 {
+
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    h3 {
+        font-size: 2em;
+        font-family: $font;
+        font-weight: 800;
+        color: $color3;
+    }
+
+    p {
+        font-family: $font;
+        color: $color3;
+    }
+
+   span {
+        font-family: $font;
+        font-weight: $fontW;
+        
+
+    }
+}
+
+
+#section2  {
+        
+        margin-top: 8em;
+        margin-bottom: 8em;
+
+    h3 {
+        font-family: $font;
+        color: $color3;
+        font-weight: $fontW;
+        font-size: 2em;
+    }
+
+        
+
+    .row {
+        margin-top: 1em;
+       
+    }
+
+    .card  {
+
+        margin: 1em auto;
+        
+        background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%)
+        box-shadow rgba($color1, .075)
+    }
+
+    a {
+        text-decoration: none;
+        font-family: $font;
+        font-weight: 800;
+        
+    }
+
+    p {
+        color: $color3;
+        font-family: $font;
+        font-weight: 500;
+    }
+}
+
+
+#section3 {
+
+    
+
+    .toper {
+        text-align: center;
+        margin-top: 5em;
+        margin-bottom: 7em;
+        height: 400px;
+        background-color: $color3;
+        
+    }
+
+    h3 {
+        padding-top: 4em;
+        font-family: $font;
+        color: $color2;
+        font-weight: $fontW;
+    }
+
+    p {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-family: $font;
+        color: $color2;
+        font-size: 1.2em;
+        
+        
+    }
+
+    input {
+        border: 1px solid black;
+        padding-right: 3em;
+        margin-right: 2em;
+    }
+
+    
+
+    span {
+        font-family: $font;
+        font-weight: 300;
+        color: #d9e7ff;
+        
+        
+    }
+
+}
+
+    #contact {
+        padding-left: 15em;
+    }
+
+    #contactForm {
+    
+   
+    text-align: center;
+    
+    
+
+    p {
+        text-align: center;
+        font-family: $font;
+        color: $color3;
+        font-size: 2em;
+        font-weight: $fontW;
+        
+        
+    }
+    ::placeholder {
+        
+        font-family: $font;
+        color: $color3;
+
+    }
+
+    
+
+    textarea {
+        height: 10rem;
+    }
+
+    span {
+        font-family: $font;
+        color: $color3;
+    }
+
+    
+}
+
