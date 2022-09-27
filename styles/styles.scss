@@ -3,104 +3,179 @@ $color1: var(--bs-black);
 $color2: white;
 $color3: #134b5f;
 $fontW: 700;
+$font1: Orbitron, san-sherif;
 $box-shadow-sm: 0 .125rem .25rem rgba($color1, .075);
-$font:  Rubik,sherif;
+$font:  Rubik, san-sherif;
 $btn-hover-bg-tint-amount: 15%;
-
+$navbar-dark-color:                $color3;
+$navbar-dark-hover-color:           $color2;
+$navbar-dark-active-color:          $color3;
 
 nav {
-    color: $color1;
+    
     background: white;
     box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
-
+    
+    .logo{
+        display: flex;
+    }
 
     .topper {
         color: #016f32;
-        font-family: $font;
+        font-family: $font1;
         font-size: 2em;
-        font-weight: $fontW;
-        letter-spacing: -2px;
+        font-weight: 800;
+        letter-spacing: -1px;
+        
     }
+
+   
 
     .nav-link {
         font-family: $font;
         font-weight: $fontW;
-        color: $color1;
-       
-	  
-}
+        color: $color3;
+        animation: myAnim 1s ease 0s 1 normal forwards;
+	}
+
+    @keyframes myAnim {
+        0% {
+            transform: scale(0.5);
+        }
+    
+        100% {
+            transform: scale(1);
+        }
+    }
+
+
+
+
+
+    
 
 }
+
+body{
+     
 
 .main {
     margin-top:  3em;
-    color: $color3;
+    
 
     .text-one {
         color: $color3;
         font-family: $font;
         font-weight: 800;
         font-size: 2em;
-        
+        animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+       
     }
 
     .text-two {
-         color: $color3;
-        font-family: $font;
-        font-weight: $fontW;
-        font-size: 4em;
-        
-    }
-
-    .text-three {
         color: $color3;
-        font-family: $font;
-        font-weight: 450;
-        font-size: 2em;
-        
+       font-family: $font;
+       font-weight: $fontW;
+       font-size: 4em;
+       animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+       
+   }
+
+   .text-three {
+       color: $color3;
+       font-family: $font;
+       font-weight: 450;
+       font-size: 2em;
+       animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+       
+   }
+
+
+   @keyframes tracking-in-expand-fwd-top {
+    0% {
+      letter-spacing: -0.5em;
+      transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
     }
-
-    .btn {
-        background-color: $color2;
-        color: #134b5f;
-        border: 2px solid $color3;
+    40% {
+      opacity: 0.6;
     }
-
-    .btn:hover, .btn:focus, .btn:active, .btn.active, .open>.dropdown-toggle.btn {
-        background-color: $color3;
-        color: $color2;
+    100% {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
     }
-
-
-
-    
-
-  
-
-    span {
-        font-weight: 500;
-        
-        font-family: $font;
-        font-size: 1em;
-    }
-
-   
-
-    .git-el, .twitter-el {
-        padding: 10px;
-    }
-
-    
-
-    .image1 {
-        max-width: 100%;
-        height: auto;
-    }
-
+  }
   
 }
+
+   .btn {
+    background-color: $color2;
+    color: $color3;
+    border: 2px solid $color3;
+
+    
+}
+
+
+.btn:hover {
+    background-color: $color3;
+    color: $color2;
+    animation: myAnim 1s linear 5ms 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+span {
+    font-weight: $fontW;
+    font-family: $font;
+    font-size: 1em;
+} 
+
+.image1 {
+   max-width: 100%;
+   height: auto;
+   animation: jello-horizontal 1.5s both;
+}
+
+
+ @keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+
+}
+
+        
 
 
 #section1 {
@@ -110,17 +185,64 @@ nav {
         height: auto;
     }
 
+    .intro {
+        max-width: 35em;
+    }
+
     h3 {
+        padding-bottom: 1em;
         font-size: 2em;
         font-family: $font;
         font-weight: 800;
         color: $color3;
+        animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
     }
 
     p {
+        padding: 0 auto;
+        
         font-family: $font;
         color: $color3;
+        animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
     }
+
+    @keyframes tracking-in-expand-fwd-top {
+        0% {
+          letter-spacing: -0.5em;
+          transform: translateZ(-700px) translateY(-500px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          transform: translateZ(0) translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .d-btn {
+        text-align: center;
+        
+    }
+
+  
+    .btn {
+        background-color: $color2;
+        color: $color3;
+        border: 2px solid $color3;
+        text-align: center;
+    }
+    
+ 
+    .btn:hover, .btn:focus, .btn:active, .btn.active {
+        background-color: $color3;
+        color: $color2;
+    }
+
+    
 
    span {
         font-family: $font;
@@ -209,12 +331,16 @@ nav {
         margin-right: 2em;
     }
 
+    input::placeholder {
+        color: $color3;
+    }
+
     
 
     span {
         font-family: $font;
         font-weight: 300;
-        color: #d9e7ff;
+        color: $color3;
         
         
     }
@@ -254,11 +380,37 @@ nav {
         height: 10rem;
     }
 
+    .d-grid {
+        justify-content: center;
+    }
+
+    .btn {
+        color: $color3;
+        max-width: em;
+        
+    }
+
+    .btn:hover {
+        background-color: $color3;
+        color: $color2;
+    }
+
     span {
         font-family: $font;
-        color: $color3;
+        
     }
 
     
 }
+    
+  
+
+
+
+
+
+
+
+
+
 

@@ -1,75 +1,216 @@
 nav {
-  color: var(--bs-black);
   background: white;
   box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 2px 7px 5px -3px rgba(0, 0, 0, 0.25);
 }
 
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 nav .topper {
   color: #016f32;
-  font-family: Rubik, sherif;
+  font-family: Orbitron, san-sherif;
   font-size: 2em;
-  font-weight: 700;
-  letter-spacing: -2px;
+  font-weight: 800;
+  letter-spacing: -1px;
 }
 
 nav .nav-link {
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   font-weight: 700;
-  color: var(--bs-black);
+  color: #134b5f;
+  -webkit-animation: myAnim 1s ease 0s 1 normal forwards;
+          animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
-.main {
+@-webkit-keyframes myAnim {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+body .main {
   margin-top: 3em;
-  color: #134b5f;
 }
 
-.main .text-one {
+body .main .text-one {
   color: #134b5f;
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   font-weight: 800;
   font-size: 2em;
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+          animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
-.main .text-two {
+body .main .text-two {
   color: #134b5f;
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   font-weight: 700;
   font-size: 4em;
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+          animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
-.main .text-three {
+body .main .text-three {
   color: #134b5f;
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   font-weight: 450;
   font-size: 2em;
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+          animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
-.main .btn {
+@-webkit-keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+            transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+            transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+body .btn {
   background-color: white;
   color: #134b5f;
   border: 2px solid #134b5f;
 }
 
-.main .btn:hover, .main .btn:focus, .main .btn:active, .main .btn.active, .main .open > .dropdown-toggle.btn {
+body .btn:hover {
   background-color: #134b5f;
   color: white;
+  -webkit-animation: myAnim 1s linear 5ms 1 normal forwards;
+          animation: myAnim 1s linear 5ms 1 normal forwards;
 }
 
-.main span {
-  font-weight: 500;
-  font-family: Rubik, sherif;
+@keyframes myAnim {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+body span {
+  font-weight: 700;
+  font-family: Rubik, san-sherif;
   font-size: 1em;
 }
 
-.main .git-el, .main .twitter-el {
-  padding: 10px;
-}
-
-.main .image1 {
+body .image1 {
   max-width: 100%;
   height: auto;
+  -webkit-animation: jello-horizontal 1.5s both;
+          animation: jello-horizontal 1.5s both;
+}
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
 }
 
 #section1 img {
@@ -77,20 +218,63 @@ nav .nav-link {
   height: auto;
 }
 
+#section1 .intro {
+  max-width: 35em;
+}
+
 #section1 h3 {
+  padding-bottom: 1em;
   font-size: 2em;
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   font-weight: 800;
   color: #134b5f;
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+          animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 #section1 p {
-  font-family: Rubik, sherif;
+  padding: 0 auto;
+  font-family: Rubik, san-sherif;
   color: #134b5f;
+  -webkit-animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+          animation: tracking-in-expand-fwd-top 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+            transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+#section1 .d-btn {
+  text-align: center;
+}
+
+#section1 .btn {
+  background-color: white;
+  color: #134b5f;
+  border: 2px solid #134b5f;
+  text-align: center;
+}
+
+#section1 .btn:hover, #section1 .btn:focus, #section1 .btn:active, #section1 .btn.active {
+  background-color: #134b5f;
+  color: white;
 }
 
 #section1 span {
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   font-weight: 700;
 }
 
@@ -100,7 +284,7 @@ nav .nav-link {
 }
 
 #section2 h3 {
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   color: #134b5f;
   font-weight: 700;
   font-size: 2em;
@@ -118,13 +302,13 @@ nav .nav-link {
 
 #section2 a {
   text-decoration: none;
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   font-weight: 800;
 }
 
 #section2 p {
   color: #134b5f;
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   font-weight: 500;
 }
 
@@ -138,7 +322,7 @@ nav .nav-link {
 
 #section3 h3 {
   padding-top: 4em;
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   color: white;
   font-weight: 700;
 }
@@ -146,7 +330,7 @@ nav .nav-link {
 #section3 p {
   padding-top: 1em;
   padding-bottom: 1em;
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   color: white;
   font-size: 1.2em;
 }
@@ -157,10 +341,26 @@ nav .nav-link {
   margin-right: 2em;
 }
 
+#section3 input::-webkit-input-placeholder {
+  color: #134b5f;
+}
+
+#section3 input:-ms-input-placeholder {
+  color: #134b5f;
+}
+
+#section3 input::-ms-input-placeholder {
+  color: #134b5f;
+}
+
+#section3 input::placeholder {
+  color: #134b5f;
+}
+
 #section3 span {
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   font-weight: 300;
-  color: #d9e7ff;
+  color: #134b5f;
 }
 
 #contact {
@@ -173,29 +373,29 @@ nav .nav-link {
 
 #contactForm p {
   text-align: center;
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   color: #134b5f;
   font-size: 2em;
   font-weight: 700;
 }
 
 #contactForm ::-webkit-input-placeholder {
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   color: #134b5f;
 }
 
 #contactForm :-ms-input-placeholder {
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   color: #134b5f;
 }
 
 #contactForm ::-ms-input-placeholder {
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   color: #134b5f;
 }
 
 #contactForm ::placeholder {
-  font-family: Rubik, sherif;
+  font-family: Rubik, san-sherif;
   color: #134b5f;
 }
 
@@ -203,8 +403,23 @@ nav .nav-link {
   height: 10rem;
 }
 
-#contactForm span {
-  font-family: Rubik, sherif;
+#contactForm .d-grid {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contactForm .btn {
   color: #134b5f;
+  max-width: em;
+}
+
+#contactForm .btn:hover {
+  background-color: #134b5f;
+  color: white;
+}
+
+#contactForm span {
+  font-family: Rubik, san-sherif;
 }
 /*# sourceMappingURL=styles.css.map */
