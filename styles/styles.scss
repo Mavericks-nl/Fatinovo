@@ -3,13 +3,24 @@ $color1: var(--bs-black);
 $color2: white;
 $color3: #134b5f;
 $fontW: 700;
-$font1: Orbitron, san-sherif;
+$font1: "Orbitron" , san-sherif;
 $box-shadow-sm: 0 .125rem .25rem rgba($color1, .075);
-$font:  Rubik, san-sherif;
+$font:  "Rubik", san-sherif;
 $btn-hover-bg-tint-amount: 15%;
 $navbar-dark-color:                $color3;
 $navbar-dark-hover-color:           $color2;
 $navbar-dark-active-color:          $color3;
+
+
+
+.topper {
+    color: #016f32;
+    font-family: $font1;
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: -1px;
+    
+}
 
 nav {
     
@@ -22,14 +33,7 @@ nav {
         display: flex;
     }
 
-    .topper {
-        color: #016f32;
-        font-family: $font1;
-        font-size: 2em;
-        font-weight: 800;
-        letter-spacing: -1px;
-        
-    }
+   
 
    
 
@@ -108,9 +112,22 @@ body{
     }
   }
   
+  .btn {
+    background-color: $color2;
+    color: $color3;
+    border: 2px solid $color3;
+
+    
 }
 
-   .btn {
+.btn:hover {
+    background-color: $color3;
+    color: $color2;
+    animation: myAnim 2s ease 5ms 1 normal forwards;
+}
+}
+
+.btn {
     background-color: $color2;
     color: $color3;
     border: 2px solid $color3;
@@ -186,7 +203,7 @@ span {
     }
 
     .intro {
-        max-width: 35em;
+        max-width: 30em;
     }
 
     h3 {
@@ -200,7 +217,7 @@ span {
     }
 
     p {
-        padding: 0 auto;
+        padding: 0 0 2em 0;
         
         font-family: $font;
         color: $color3;
@@ -347,11 +364,11 @@ span {
 
 }
 
-    #contact {
+ #contact {
         padding-left: 15em;
-    }
+}
 
-    #contactForm {
+#contactForm {
     
    
     text-align: center;
@@ -401,6 +418,23 @@ span {
     }
 
     
+}
+
+.footer {
+    font-family: $font;
+    color: $color1;
+    margin-top: 5em;
+    text-align: center;
+
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .right {
+        margin: 1em auto;
+    }
 }
     
   
